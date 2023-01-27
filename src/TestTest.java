@@ -36,12 +36,7 @@ class TestTest {
 
     @Test
     public void TestMethod_2() {
-        Runnable runnable = new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("Hello,匿名内部类");
-            }
-        };
+        Runnable runnable = () -> System.out.println("Hello,匿名内部类");
 //        Runnable runnable = () -> System.out.println("Hello,匿名内部类");
         runnable.run();
     }
